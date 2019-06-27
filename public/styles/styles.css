@@ -1,3 +1,29 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body {
+  background-image: url("KillerKlown.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  color: rgb(192, 0, 0);
+ }
+
+ @font-face {
+  font-family: 'Carnevalee Freakshow'; /*a name to be used later*/
+  src: url('Carnevalee Freakshow.ttf'); /*URL to font*/
+}
+
+body {
+  font-family: 'Carnevalee Freakshow';
+  font-size: 400%;
+  margin: 50px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  color: rgb(201, 204, 0);
+
+}
+
