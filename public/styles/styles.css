@@ -19,11 +19,17 @@ body {
 
 body {
   font-family: 'Carnevalee Freakshow';
-  font-size: 400%;
-  margin: 50px auto;
+  margin: 20px auto;
 	text-align: center;
 	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
-  color: rgb(201, 204, 0);
+  color: rgb(236, 95, 0);
 
 }
 
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 64px;
+}
