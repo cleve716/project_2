@@ -108,8 +108,8 @@ h2 {
 
 .armor {
   background-image: url("gear.jpeg");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,8 +118,8 @@ h2 {
 
 .weapons   {
   background-image: url("weapon.jpeg");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,8 +127,8 @@ h2 {
 
 .food   {
   background-image: url("food2.png");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
