@@ -6,7 +6,7 @@
 body {
   background-image: url("KillerKlown.jpeg");
   background-blend-mode: soft-light;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -47,12 +47,12 @@ h2 {
 
 /* heading dropping down animation when page loads */
 .heading {
-  line-height: 1.3;
+  /* line-height: 1.3;
   position: relative;
   animation: heading;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
   box-shadow: 0 0 .2em .2em #ccc;
 }
 
@@ -63,12 +63,12 @@ h2 {
 
 /* "we do survival" animation coming up when page loads */
 .survival {
-  line-height: 1.3;
+  /* line-height: 1.3;
   position: relative;
   animation: survival;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
   box-shadow: 0 0 .2em .2em #ccc;
 }
 
@@ -80,7 +80,7 @@ h2 {
 /* "lets buy not die" fade in animation */
 .buyNotDie {
   color: rgb(190, 0, 0);
-  animation: 6s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
 }
 
 @keyframes fadein{
@@ -108,8 +108,8 @@ h2 {
 
 .armor {
   background-image: url("gear.jpeg");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,8 +118,8 @@ h2 {
 
 .weapons   {
   background-image: url("weapon.jpeg");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,8 +127,8 @@ h2 {
 
 .food   {
   background-image: url("food2.png");
-  height: 180px;
-  width: 180px;
+  height: 240px;
+  width: 240px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -136,4 +136,8 @@ h2 {
 
 img {
   opacity: .8;
+}
+
+td {
+  font-size: 24px;
 }

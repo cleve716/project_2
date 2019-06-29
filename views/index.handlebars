@@ -3,20 +3,114 @@
     <div class="row">
       <div class="col-12">
         <h1 class="heading">{{msg}}</h1>
+        <div class="animation-body">
         <h2 class="buyNotDie">Let's buy and not die!!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="row">
         <div class="col-md-4">
           <h2>GeaR</h2>
           <img class="img-responsive img armor">
-        </div>
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">TypE</th>
+      <th scope="col">QtY</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{!-- buttons can be accessed by class gear-1, gear-2, ect --}}
+    <tr>
+      <th scope="row gear-table">1</th>
+      <td>Backpack</td>
+      <td>5</td>
+      <td><button type="button gear-1" class="btn btn-danger">BuY</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Braided Rope</td>
+      <td>12</td>
+      <td><button type="button gear-2" class="btn btn-danger">BuY</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Flashlight</td>
+      <td>83</td>
+      <td><button type="button gear-3" class="btn btn-danger">BuY</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
         <div class="col-md-4">
           <h2>FooD</h2>
           <img class="img-responsive img food">
+                <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">TypE</th>
+      <th scope="col">QtY</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{!-- buttons can be accessed by class food-1, food-2, ect --}}
+    <tr>
+      <th scope="row food-table">1</th>
+      <td>1lb Beef Jerky</td>
+      <td>82</td>
+      <td><button type="button food-1" class="btn btn-danger">BuY</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Sack of Potatos</td>
+      <td>63</td>
+      <td><button type="button food-2" class="btn btn-danger">BuY</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Energy Bar</td>
+      <td>98</td>
+      <td><button type="button food-3" class="btn btn-danger">BuY</button></td>
+    </tr>
+  </tbody>
+</table>
         </div>
         <div class="col-md-4">
           <h2>WeaponS</h2>
           <img class="img-responsive img weapons">
+                <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">TypE</th>
+      <th scope="col">QtY</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{!-- buttons can be accessed by class weapons-1, weapons-2, ect --}}
+    <tr>
+      <th scope="row weapons-table">1</th>
+      <td>Crossbow</td>
+      <td>15</td>
+      <td><button type="button weapons-1" class="btn btn-danger">BuY</button> </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Shovel</td>
+      <td>43</td>
+      <td><button type="button weapons-2" class="btn btn-danger">BuY</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Dartgun</td>
+      <td>83</td>
+      <td><button type="button weapons-3" class="btn btn-danger">BuY</button></td>
+    </tr>
+  </tbody>
+</table>
         </div>
         </div>
           </div>
@@ -41,6 +135,7 @@
         </ul> --}}
         <div class="col-10 offset-1">
           <h2 class="survival">"We do survivaL"</h2>
+        </div>
         </div>
       </div>
     </div>
