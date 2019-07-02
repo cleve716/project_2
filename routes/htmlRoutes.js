@@ -6,7 +6,7 @@ module.exports = function (app) {
     db.Example.findAll({}).then(function (dbExamples) {
       res.render("index", {
         msg: "The killer clown apocalypse storE",
-        examples: dbExamples
+        gear: dbExamples
       });
     });
   });
@@ -22,7 +22,8 @@ module.exports = function (app) {
   app.get("/gear", function (req, res) {
     db.Example.findAll({ where: { category: "gear" } }).then(function (dbExamples) {
       res.render("gear", {
-        examples: dbExamples
+        examples: dbExamples,
+
       });
     });
   });

@@ -151,4 +151,14 @@ img {
 td {
   font-size: 24px;
 }
-=======
+
+.list-group-item {
+  font-size: 24px;
+  font-family: 'Carnevalee Freakshow';
+  margin: center;
+  color: rgb(194, 236, 3);
+}
+
+.data {
+  margin: center;
+}
