@@ -21,24 +21,15 @@
   </thead>
   <tbody>
     {{!-- buttons can be accessed by class gear-1, gear-2, ect --}}
+    {{#each gear}}
     <tr>
       <th scope="row gear-table">1</th>
-      <td>Backpack</td>
-      <td>5</td>
+      <td>{{this.name}}</td>
+      <td></td>
       <td><button type="button gear-1" class="btn btn-danger">BuY</button></td>
     </tr>
+    {{/each}}
     <tr>
-      <th scope="row">2</th>
-      <td>Braided Rope</td>
-      <td>12</td>
-      <td><button type="button gear-2" class="btn btn-danger">BuY</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Flashlight</td>
-      <td>83</td>
-      <td><button type="button gear-3" class="btn btn-danger">BuY</button></td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -124,7 +115,7 @@
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button> --}}
         </form>
-        <h3>Items:</h3>
+    
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
@@ -144,3 +135,4 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+

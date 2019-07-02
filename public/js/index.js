@@ -46,8 +46,8 @@ var refreshExamples = function() {
         .append($a);
 
       var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+        .addClass("btn btn-danger float-right")
+        .text("buy");
 
       $li.append($button);
 
