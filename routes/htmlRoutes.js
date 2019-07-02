@@ -22,7 +22,7 @@ module.exports = function (app) {
   app.get("/gear", function (req, res) {
     db.Example.findAll({ where: { category: "gear" } }).then(function (dbExamples) {
       res.render("gear", {
-        examples: dbExamples,
+        gear: dbExamples,
 
       });
     });

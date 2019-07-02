@@ -46,25 +46,16 @@
     </tr>
   </thead>
   <tbody>
-    {{!-- buttons can be accessed by class food-1, food-2, ect --}}
+    {{!-- buttons can be accessed by class gear-1, gear-2, ect --}}
+    {{#each gear}}
     <tr>
-      <th scope="row food-table">1</th>
-      <td>1lb Beef Jerky</td>
-      <td>82</td>
-      <td><button type="button food-1" class="btn btn-danger">BuY</button></td>
+      <th scope="row gear-table">1</th>
+      <td>{{this.name}}</td>
+      <td></td>
+      <td><button type="button gear-1" class="btn btn-danger">BuY</button></td>
     </tr>
+    {{/each}}
     <tr>
-      <th scope="row">2</th>
-      <td>Sack of Potatos</td>
-      <td>63</td>
-      <td><button type="button food-2" class="btn btn-danger">BuY</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Energy Bar</td>
-      <td>98</td>
-      <td><button type="button food-3" class="btn btn-danger">BuY</button></td>
-    </tr>
   </tbody>
 </table>
         </div>
@@ -81,25 +72,16 @@
     </tr>
   </thead>
   <tbody>
-    {{!-- buttons can be accessed by class weapons-1, weapons-2, ect --}}
+    {{!-- buttons can be accessed by class gear-1, gear-2, ect --}}
+    {{#each gear}}
     <tr>
-      <th scope="row weapons-table">1</th>
-      <td>Crossbow</td>
-      <td>15</td>
-      <td><button type="button weapons-1" class="btn btn-danger">BuY</button> </td>
+      <th scope="row gear-table">1</th>
+      <td>{{this.name}}</td>
+      <td></td>
+      <td><button type="button gear-1" class="btn btn-danger">BuY</button></td>
     </tr>
+    {{/each}}
     <tr>
-      <th scope="row">2</th>
-      <td>Shovel</td>
-      <td>43</td>
-      <td><button type="button weapons-2" class="btn btn-danger">BuY</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Dartgun</td>
-      <td>83</td>
-      <td><button type="button weapons-3" class="btn btn-danger">BuY</button></td>
-    </tr>
   </tbody>
 </table>
         </div>
