@@ -9,5 +9,30 @@
           {{/each}}
         </ul>
 
+    <div class="col-md-4">
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">TypE</th>
+      <th scope="col">QtY</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{!-- buttons can be accessed by class gear-1, gear-2, ect --}}
+    {{#each gear}}
+    <tr>
+      <th scope="row gear-table">1</th>
+      <td>{{this.name}}</td>
+      <td></td>
+      <td><button type="button gear-1" class="btn btn-danger">BuY</button></td>
+    </tr>
+    {{/each}}
+    <tr>
+  </tbody>
+</table>
+</div>
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
