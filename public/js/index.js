@@ -18,7 +18,7 @@ var API = {
   },
   getExamples: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/clowns",
       type: "GET"
     });
   },
@@ -46,7 +46,7 @@ var refreshExamples = function() {
         .append($a);
 
       var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
+        .addClass("btn btn-danger float-right")
         .text("ｘ");
 
       $li.append($button);
