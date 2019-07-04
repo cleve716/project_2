@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .list-group-item {
   line-height: 2.5;
 }
@@ -31,7 +35,7 @@ body {
   font-family: 'Carnevalee Freakshow';
   margin: 20px auto;
 	text-align: center;
-	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	/* text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8); */
   color: rgb(194, 236, 3);
 
 }
@@ -151,4 +155,35 @@ img {
 td {
   font-size: 24px;
 }
+
+#cart-card {
+  font-family: Arial;
+}
+.itm-desc{
+  color:black;
+
+  
+}
+.card-body{
+ background-color: rgba(52, 126, 15, 0.972);
+ opacity: 100%;
+ 
+}
+.card-button{
+  margin-bottom: 10px;
+}
+
+#links{
+  font-family: Arial;
+ font-size: 30px;
+
+}
+
+#cart-card{
+  margin-left: 100px;
+}
+
+#card-wrap{
+margin: 20px;
+ }
 =======

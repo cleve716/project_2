@@ -8,8 +8,8 @@
     {{/each}}
 </ul>
 
-<ul>
-    <li><a href="/">← Back To Home</a></li>
+<ul id="links"style="list-style-type:none;" >
+   <li> <a href="/"> Back To Home</a></li>
     <li><a href="food">Food</a></li>
     <li><a href="gear">Gear</a></li>
     <li><a href="weapons">Weapons</a></li>
@@ -18,3 +18,24 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+
+
+
+<div id="cart-card" class="card" style="width: 14rem;">
+    {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+    {{#each cart_items}}
+   
+    <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <p class="card-text">&quot{{this.text}}"</p>
+    </div>
+    <ul class="list-group list-group-flush itm-desc">
+        <li class="list-group-item">&nbsp price: ${{this.price}}</li>
+        <li class="list-group-item">Amount left: {{this.quantity}} </li>
+    </ul>
+    <div class ="card-button">
+        <a href="#" class="btn btn-primary delete" id="remove from cart">Remove from cart</a>
+    </div>
+    {{/each}}
+
+</div>
