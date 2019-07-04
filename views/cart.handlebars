@@ -2,8 +2,7 @@
 <ul id="example-list" class="list-group">
     {{#each cart_items}}
     <li data-id="{{this.id}}" class="list-group-item">
-        <a href="example/{{this.id}}">{{this.name}} : &quot{{this.text}}" &nbsp price: ${{this.price}} &nbsp amount in
-            stock: {{this.quantity}}</a>
+        <a href="example/{{this.id}}">{{this.name}} : &quot{{this.text}}" &nbsp price: ${{this.price}} </a>
         {{!-- <button class="btn btn-danger float-right delete">add to cart</button> --}}
     </li>
     {{/each}}

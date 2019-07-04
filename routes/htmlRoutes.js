@@ -46,7 +46,7 @@ module.exports = function (app) {
 
 
 
-  // Load example page and pass in an example by id
+  // Load product page and pass in an example by id
   app.get("/product/:id", function (req, res) { // this creates the route that hbs files refer to regarding the href link in the particular hbs file
     db.Clown.findOne({ where: { id: req.params.id } }).then(function (clowns_item_detail) {
       res.render("item", { //references name of the HBS page you are pointing
