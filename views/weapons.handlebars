@@ -1,12 +1,21 @@
 <h3>WEAPONS:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.name}} : &quot{{this.text}}" &nbsp   price: ${{this.price}}   &nbsp amount in stock: {{this.quantity}}</a>
-            <button class="btn btn-danger float-right delete">add to cart</button>
-          </li>
-          {{/each}}
-        </ul>
+<ul id="example-list" class="list-group">
+  {{#each each_weapon}}
+  <li data-id="{{this.id}}" class="list-group-item">
+    {{!-- a href="product/{{this.id} refers to the app.get in htmlRoutes with the html route "/product/:id" --}}
+    <a href="product/{{this.id}}">{{this.name}} : &quot{{this.text}}" &nbsp price: ${{this.price}} &nbsp amount in
+      stock: {{this.quantity}}</a>
+    <button class="btn btn-danger float-right delete">add to cart</button>
+  </li>
+  {{/each}}
+</ul>
+<ul>
+  <li><a href="/">← Back To Home</a></li>
+  <li><a href="food">Food</a></li>
+  <li><a href="gear">Gear</a></li>
+  <li><a href="weapons">Weapons</a></li>
+  <li><a href="cart">Go to Cart</a></li>
+</ul>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
