@@ -22,9 +22,8 @@ var API = {
       type: "GET"
     });
   },
-  deleteExample: function(id) {
-    return $.ajax({
-      url: "api/examples/" + id,
+  deleteCart: function(id) {
+    return $.ajax({url: "api/carts/" + id,
       type: "DELETE"
     });
   }
@@ -33,21 +32,21 @@ var API = {
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
   API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
+    var $examples = data.map(function(cart) {
       var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+        .text(cart.text)
+        .attr("href", "/cart/" + cart.id);
 
       var $li = $("<li>")
         .attr({
           class: "list-group-item",
-          "data-id": example.id
+          "data-id": cart.id
         })
         .append($a);
 
       var $button = $("<button>")
-        .addClass("btn btn-danger float-right")
-        .text("ｘ");
+        .addClass("btn btn-danger float-right delete")
+        .text("after delete");
 
       $li.append($button);
 
@@ -85,12 +84,11 @@ var handleFormSubmit = function(event) {
 // handleDeleteBtnClick is called when an example's delete button is clicked
 // Remove the example from the db and refresh the list
 var handleDeleteBtnClick = function() {
-  var idToDelete = $(this)
-    .parent()
-    .attr("data-id");
+  var idToDelete = $(this).parent().attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
-    refreshExamples();
+  API.deleteCart(idToDelete).then(function() {
+   // refreshExamples();
+   location.reload();
   });
 };
 
