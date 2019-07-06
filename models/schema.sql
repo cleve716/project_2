@@ -10,8 +10,6 @@ CREATE TABLE clowns (
   category  VARCHAR(45) NOT NULL,
   quantity INT NOT NULL,
   price DECIMAL(10,2) NOT NULL,  
-  createdAt datetime default now(), 
-  updatedAt datetime default now() on update now(),
   PRIMARY KEY (id)
 );
 
