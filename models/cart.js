@@ -40,6 +40,16 @@ module.exports = function (sequelize, DataTypes) {
   
         type: DataTypes.STRING,
   
+      },
+      createdAt: {
+        allowNull: true,
+        type: DataTypes.DATE,
+        defaultValue: new Date()
+      },
+      updatedAt: {
+        allowNull: true,
+        type: DataTypes.DATE,
+        defaultValue: new Date()
       }
   
     });
