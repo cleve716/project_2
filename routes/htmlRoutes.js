@@ -6,7 +6,7 @@ module.exports = function (app) {
     db.Clown.findAll({}).then(function (dbClowns) {
       res.render("index", {
         msg: "The killer clown apocalypse storE",
- add_table_cart
+ //add_table_cart//
         examples: dbClowns
 
       });
