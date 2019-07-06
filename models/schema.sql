@@ -5,13 +5,11 @@ USE clownsdb;
 
 CREATE TABLE clowns (
   id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR() NOT NULL,
+  name VARCHAR(255) NOT NULL,
   text VARCHAR (255) NOT NULL,
   category  VARCHAR(45) NOT NULL,
   quantity INT NOT NULL,
   price DECIMAL(10,2) NOT NULL,  
-  createdAt datetime default now(), 
-  updatedAt datetime default now() on update now(),
   PRIMARY KEY (id)
 );
 
