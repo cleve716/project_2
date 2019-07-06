@@ -6,7 +6,9 @@ module.exports = function (app) {
     db.Clown.findAll({}).then(function (dbClowns) {
       res.render("index", {
         msg: "The killer clown apocalypse storE",
+ add_table_cart
         examples: dbClowns
+
       });
     });
   });
@@ -22,9 +24,11 @@ module.exports = function (app) {
   
 
   app.get("/gear", function (req, res) {
+
     db.Clown.findAll({ where: { category: "gear" } }).then(function (db_table_clowns_cat_gear) {  // db."" must match var "Clown" in models js file then function can be called whatever you want it to be
       res.render("gear", {// the render must match with "" the path on app.get /gear
         each_gear: db_table_clowns_cat_gear
+
       });
     });
   });
