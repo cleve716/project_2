@@ -13,6 +13,15 @@ module.exports = function (app) {
     });
   });
 
+  app.get("/clowns/new", function(req, res) {
+    res.render("form");
+});
+
+  app.get("/login", function(req, res){
+
+    res.render("login");
+  });
+
   app.get("/food", function (req, res) { //references path to hbs file under views: /food.handlebars
     db.Clown.findAll({ where: { category: "food" } }).then(function (db_table_clowns_cat_food) { // db."" must match var "Clown" in models js file then function can be called whatever you want it to be. 
       res.render("food", { // the render must match with "" the path on app.get /food
@@ -47,7 +56,6 @@ module.exports = function (app) {
       });
     });
   });
-
 
 
   // Load product page and pass in an example by id
