@@ -1,8 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "Colorado123!",
+    "password": "root",
     "database": "clownsdb",
+    "port":8889,
     "host": "localhost",
     "dialect": "mysql"
   },
