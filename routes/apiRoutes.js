@@ -43,6 +43,27 @@ module.exports = function (app) {
       res.json(addToCart);
     });
   });
+  app.post("/clowns/new", function(req, res) {
+    var {name,text,category,quantity,price} = req.body;
+    var newContact = {
+    name, //firstName: firstName
+    text,
+    quantity: quantity || null,
+    price: price || null,
+    category
+    }
+  
+    
+  db.Clown.create (newContact).then(function(contact){
+    console.log(`Added contact ${contact.firstName} ${contact.lastName}`); //backend
+    
+    res.json({ id: contact.id }) //frontend
+  
+  
+  });
+  
+  
+  });
 
   // Delete an example by id
   app.delete("/api/carts/:id", function (req, res) {

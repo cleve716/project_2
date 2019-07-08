@@ -210,8 +210,28 @@ margin: 20px;
 }
 
 
+.giphy-embed{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 150px;
+  max-height: 150px;
+}
 
+.btn-secondary {
+background-color: rgb(156, 1, 1);
+height: 50px;
+width: 200px;
+font-size: 24px;
+}
 
+h4 {
+  font-size: 60px;
+}
 
 /* .clown{
   position: relative;
